@@ -9,9 +9,9 @@
 <h3>Features</h3>
 <ul>
   <li>Attractive, elegant, and modern design suitable for all screen sizes.</li>
-  <li>you to filter movies and series by number of views, release date, genre, popularity, highest rating, or most viewed.</li> 
-  <li> You can search for your favorite movies. </li>
-  <li> Using a real API to obtain data.</li>
-  <li> It offers two modes: dark and light. </li>
   <li> Authentication to provide greater protection for users.</li>
+  <li> It offers two modes: dark and light. </li>
+  <li> Using a real API to obtain data.</li>
+  <li> You can search for your favorite movies. </li>
+  <li>you to filter movies and series by number of views, release date, genre, popularity, highest rating, or most viewed.</li> 
 </ul>
