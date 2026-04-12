@@ -4,7 +4,7 @@
 </p>
 
 <h3>Tools</h3>
-<p> html , css , js , react , react query , daisyUi , swiper , Motion and Redux </p>
+<p> js , react , tanstack-react-query , Redux Toolkit , Motion ,Tailwind CSS and DaisyUI </p>
 
 <h3>Features</h3>
 <ul>
