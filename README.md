@@ -1,16 +1,17 @@
-# React + Vite
+<h1>MOVIES_M-B</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>This project features an attractive, elegant, and modern design, compatible with all screen sizes, and includes the following pages: Login, Registration, Home, Movies, Series, Details, Watchlist, and Favorites. The project allows you to filter movies and series by number of views, release date, genre, popularity, highest rating, or most viewed. You can also search for your favorite movies. The project also features a real API and offers two modes: dark and light. The Movies page includes filtering options by: Discover, Now Playing , Popular, Top Rated , and Upcoming. The TV Series page includes filtering options by: Discover , Airing Today , On The Air , Popular, and Top Rated You can add movies to your favorites or watch them later, but you must first create an account and log in for added security.
+</p>
 
-Currently, two official plugins are available:
+<h3>Tools</h3>
+<p> js , react , tanstack-react-query , Redux Toolkit , Motion ,Tailwind CSS and DaisyUI </p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<h3>Features</h3>
+<ul>
+  <li>Attractive, elegant, and modern design suitable for all screen sizes.</li>
+  <li> Authentication to provide greater protection for users.</li>
+  <li> It offers two modes: dark and light. </li>
+  <li> Using a real API to obtain data.</li>
+  <li> You can search for your favorite movies. </li>
+  <li>you to filter movies and series by number of views, release date, genre, popularity, highest rating, or most viewed.</li> 
+</ul>
