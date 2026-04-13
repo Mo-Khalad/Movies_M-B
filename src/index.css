@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark, black;
+}
+@font-face {
+    font-family: 'SemiBold';
+    src: url('/Fonts/Lora-SemiBold.ttf')format('truetype');
+    font-weight: 400;
+}
+body{
+    font-family: 'SemiBold', sans-serif;
+}
