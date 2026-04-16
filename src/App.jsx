@@ -33,7 +33,8 @@ const App = () => {
   ]);
   return(
   <div>
-    <RouterProvider router={router}></RouterProvider>;
+    <RouterProvider router={router}></RouterProvider> 
   </div> ) 
 };
 export default App;
+  

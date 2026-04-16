@@ -10,3 +10,14 @@
 body{
     font-family: 'SemiBold', sans-serif;
 }
+input ,label{
+    border:0 !important;
+    outline: none;
+    border-bottom:3px solid #fdfdfd !important ;
+}
+input::placeholder{
+    font-size:17px !important;
+}
+.navbar ,.navbar-start{
+    max-height: 3rem !important;
+}
