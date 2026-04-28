@@ -6,10 +6,10 @@
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 800px;
-    height: 400px;
     transition: border 0.3s ease !important;
     transition-delay: 0.3s !important; /* ⏱ delay */
+    height: 400px;
+    margin: auto;
 }
 .swiper-pagination-bullet{
     background-color:#fff !important
@@ -34,4 +34,13 @@
 .h2{
     bottom: -244px;
     background-color: #d9a520;
+}
+@media screen and (width < 569px){
+    .swiper-slide{
+        height: 300px !important;   
+    }  
+    .swiper-3d{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }

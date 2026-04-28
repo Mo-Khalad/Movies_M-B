@@ -2,6 +2,16 @@
 @plugin "daisyui" {
     themes: light --default, dark --prefersdark, black;
 }
+:root{
+    --main-shadow: 0px 2px 10px #d9a52080;
+    --second-shadow: 0px 2px 10px rgba(255,255,255,0.5);
+    --main-color: #d9a520 ;
+}
+@theme{
+    --shadow-main-shadow: var(--main-shadow);
+    --shadow-second-shadow:var(--second-shadow);
+    --color-main-color: var(--main-color) 
+}
 @font-face {
     font-family: 'SemiBold';
     src: url('/Fonts/Lora-SemiBold.ttf')format('truetype');
@@ -10,14 +20,63 @@
 body{
     font-family: 'SemiBold', sans-serif;
 }
-input ,label{
-    border:0 !important;
+input{
     outline: none;
-    border-bottom:3px solid #fdfdfd !important ;
 }
-input::placeholder{
-    font-size:17px !important;
+select{
+    outline: none !important;
 }
-.navbar ,.navbar-start{
-    max-height: 3rem !important;
+option{
+    margin-top: 30px !important;
+}
+.navbar,
+.navbar-start {
+    max-height: none !important;
+}
+.stroke-main {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    transition: stroke-dashoffset 4s ease;
+}
+.stroke-main.active {
+   stroke-dashoffset: 0;
+}
+MainButton{
+    margin: center;
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    color: white;
+    outline: none;
+    border: none;
+    overflow: hidde;
+    background:linear-gradient(to right , #d9a520 , #a27d18 ,#291e01 );
+    transition: color 1s ease-in-out;
+    transition-delay: 0.1s;
+    width: 10rem;
+    height: 3rem;
+    border-radius: .4rem;
+    font-weight: 900 !important; 
+}
+.MainButton::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #3cefff;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.5s ease-in-out;
+}
+.MainButton:hover {
+    cursor: pointer;
+    color: #161616;
+}
+  
+.MainButton:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
 }

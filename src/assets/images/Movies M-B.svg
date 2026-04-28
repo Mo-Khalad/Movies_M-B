@@ -1,0 +1,51 @@
+<svg width="240" height="56" viewBox="0 0 240 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoFill" x1="16" y1="10" x2="224" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9A520" />
+      <stop offset="0.5" stop-color="#F4D67A" />
+      <stop offset="1" stop-color="#B8860B" />
+      <animateTransform
+        attributeName="gradientTransform"
+        type="translate"
+        values="-40 0; 40 0; -40 0"
+        dur="4.5s"
+        repeatCount="indefinite"
+      />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="238" height="54" rx="27" fill="#0D0D0D" fill-opacity="0.72" stroke="rgba(255,255,255,0.14)">
+    <animate
+      attributeName="stroke-opacity"
+      values="0.14;0.35;0.14"
+      dur="3.2s"
+      repeatCount="indefinite"
+    />
+  </rect>
+  <text
+    x="120"
+    y="28"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    fill="url(#logoFill)"
+    filter="url(#softGlow)"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    letter-spacing="0.4"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.9;1;0.9"
+      dur="2.8s"
+      repeatCount="indefinite"
+    />
+    Movies M-B
+  </text>
+</svg>
