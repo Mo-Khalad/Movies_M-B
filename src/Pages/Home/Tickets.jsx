@@ -1,10 +1,10 @@
 import React from "react";
-import { Dropdown } from "../../Components/Ui/Blocks/Dropdown";
+import { Dropdown } from "@/Components/Ui/Blocks/Dropdown";
 import {
   movieTimeOptions,
   seatsCountOptions,
-} from "../../Logic/dataLocalStatic";
-import { motion as Motion } from "../../Shared/Libs";
+} from "@/Logic/dataLocalStatic";
+import { motion as Motion } from "@/Shared/Libs";
 
 export const Tickets = () => {
   return (

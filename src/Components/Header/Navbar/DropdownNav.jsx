@@ -1,8 +1,8 @@
-import React from 'react'
-import { navItems } from '../../../Logic/dataLocalStatic'
-import { HoverLayerButton } from "../../Ui/CustomBtn/HoverLayerButton";
-import { Link, NavLink } from "react-router-dom";
-import { Links } from './Links'
+import React from 'react';
+import { navItems } from '@/Logic/dataLocalStatic';
+import { NavLink , Link } from '@/Shared/Libs';
+import { Links  , HoverLayerButton } from '@/Shared/Components';
+
 export const DropdownNav = ({setIsMenuOpen , isMenuOpen }) => {
 
 const navLinkClassName = ({ isActive }) =>{

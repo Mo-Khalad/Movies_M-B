@@ -1,14 +1,16 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
-import { Navbar } from '../Header/Navbar/Navbar'
-import { Footer } from '../Footer/Footer'
+import { Navbar } from '../Header/Navbar/Navbar';
+import { Footer } from '../Footer/Footer';
+import { useLocation , Outlet} from '@/Shared/Libs';
 
 export const LayOut = () => {
+ const pathname = useLocation().pathname
+
   return (
     <>
        <Navbar/>
        <Outlet></Outlet>
-       <Footer/>
+       { ( pathname !== '/login' && pathname !== '/register' ) ? <Footer/> : '' }
     </>
  
   )

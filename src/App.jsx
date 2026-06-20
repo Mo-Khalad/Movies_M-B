@@ -25,15 +25,17 @@ const App = () => {
         { path: "/Favorite", element: <Favorite /> },
         { path: "/Movies", element: <Movies /> },
         { path: "/TVShows", element: <TVShows /> },
-        { path: "WatchList", element: <WatchList /> },
-        { path: "Login", element: <Login /> },
-        { path: "Register", element: <Register /> },
+        { path: "/WatchList", element: <WatchList /> },
+        { path: "/Login", element: <Login /> },
+        { path: "/Register", element: <Register /> },
       ],
     },
   ]);
   return(
   <div>
-    <RouterProvider router={router}></RouterProvider> 
+    <RouterProvider 
+     className='toggle theme-controller'
+    router={router}></RouterProvider> 
   </div> ) 
 };
 export default App;

@@ -21,7 +21,7 @@ body{
     font-family: 'SemiBold', sans-serif;
 }
 input{
-    outline: none;
+    outline: none !important;
 }
 select{
     outline: none !important;
@@ -41,6 +41,10 @@ option{
 .stroke-main.active {
    stroke-dashoffset: 0;
 }
+button{
+    cursor:pointer
+}
+/*
 MainButton{
     margin: center;
     z-index: 1;
@@ -80,3 +84,4 @@ MainButton{
 .MainButton:hover::before {
     transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
 }
+*/

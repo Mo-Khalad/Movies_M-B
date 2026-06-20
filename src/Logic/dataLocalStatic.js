@@ -99,7 +99,6 @@ const navItems = [
   { label: "Favorites", to: "/Favorite" },
 ];
 
-
 export {
     slideImageData ,
     subscriptionsData ,

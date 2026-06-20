@@ -5,6 +5,8 @@ import googleIcon from '/src/assets/images/googleIcon.webp';
 import TV from '/src/assets/images/TV.webp';
 import googlePlay from '/src/assets/images/googlePlay.webp';
 import tvShow from '/src/assets/images/tvShows.webp'
+import moviesMBLogo from "@/assets/images/Movies M-B.svg";
+import layer from "@/assets/images/Layer.webp";
 
 export {
     chromeCast ,
@@ -12,6 +14,8 @@ export {
     googleIcon ,
     TV ,
     googlePlay ,
-    tvShow
+    tvShow , 
+    moviesMBLogo ,
+    layer ,
 }
     

@@ -1,8 +1,6 @@
 import React from "react";
-import { slideImageData } from '../../Logic/dataLocalStatic'
-import { Swiper , SwiperSlide } from "../../Shared/Libs";
-
-//import  slider1 from '../../assets/images/publicHomeSlider/';
+import { slideImageData } from '@/Logic/dataLocalStatic'
+import { Swiper , SwiperSlide } from "@/Shared/Libs";
  
 // Import Swiper styles
 import "swiper/css";

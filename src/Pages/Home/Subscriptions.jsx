@@ -1,35 +1,43 @@
 import React from "react";
-import { motion as Motion } from "../../Shared/Libs";
-import { subscriptionsData } from "../../Logic/dataLocalStatic";
+import { motion as Motion } from "@/Shared/Libs";
+import { subscriptionsData } from "@/Logic/dataLocalStatic";
+import { BounceInUp } from "@/Shared/Components";
+import { SecondaryBtn } from "@/Components/Ui/CustomBtn/SecondaryBtn";
+
 export const Subscriptions = () => {
   const isMobile = window.innerWidth < 768;
   const className =
     "scroll-mt-28 bg-base-200 border-2 border-[#8d680a] border-main/50 max-w-9/10 mx-auto rounded-tr-full rounded-bl-full my-20 p-0 md:p-9";
   return (
     <section className={className}>
-      <Motion.h2
-        className="text-3xl md:text-5xl w-full mt-4 md:mt:8 mb-10 md:mb-20 text-center text-main-color"
-        initial={{ opacity: 0, y: 75 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-      >
+   
+   <BounceInUp 
+      duration={0.9}
+      className="text-3xl md:text-5xl w-full mt-4 md:mt:8 mb-10 md:mb-20 text-center text-main-color"
+     >
         Choose your package
-      </Motion.h2>
+     </BounceInUp>
 
       <div className="flex flex-wrap justify-evenly items-center">
         {subscriptionsData.map(({ type, title, price, features, month } , index) => {
           return (
-            <Motion.div
+            <BounceInUp
               key={index}
-              initial={{ opacity: 0, y: 75 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              whileHover={
-                !isMobile ? (type === "economy" ? { scale: 1.2 } : {}) : {}
-              }
-              className={`${type === "economy" ? "w-76 h-64 shadow-second-shadow hover:shadow-main-shadow transition-shadow delay-500" : "w-76 h-64 md:w-96 md:h-76 md:shadow-main-shadow"} my-2 bg-base-100 shadow-main-shadow flex items-center`}
+              className={`${type === "economy"
+                ? "w-76 h-64 shadow-second-shadow hover:shadow-main-shadow"
+                : "w-76 h-64 md:w-96 md:h-76 md:shadow-main-shadow"
+              } my-2 bg-base-100 shadow-main-shadow flex items-center`}
+              className={`${type === "economy" ? "w-76 h-64 shadow-second-shadow hover:shadow-main-shadow transition-shadow delay-150" : "w-76 h-64 md:w-96 md:h-76 md:shadow-main-shadow"} my-2 bg-base-100 shadow-main-shadow flex items-center`}
+              duration = {0.6}
+              whileHover={!isMobile ? (type === "economy" ? { 
+                  scale: 1.2 ,
+                  transition:{
+                  type: "tween",
+                  duration: 0.2,
+                  ease: "easeOut"
+                }
+              } : {}) : {}
+            }
             >
               <div className="card-body">
                 <span
@@ -70,7 +78,7 @@ export const Subscriptions = () => {
                         </svg>
                         <span
                           className={`${type !== "economy" ? "md:text-sm" : ""}`}
-                        >
+                        > 
                           {feature}
                         </span>
                       </li>
@@ -79,16 +87,10 @@ export const Subscriptions = () => {
                 </ul>
 
                 <div className="mt-4">
-                  <button
-                    className={`btn btn-primary btn-block text-xs ${
-                      type === "economy" ? "h-8" : "h-8 md:h-10 md:mt-6"
-                    }`}
-                  >
-                    Subscribe
-                  </button>
+                   <SecondaryBtn type={ type }> Subscribe </SecondaryBtn>
                 </div>
               </div>
-            </Motion.div>
+            </BounceInUp>
           );
         })}
       </div>

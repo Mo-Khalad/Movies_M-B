@@ -1,7 +1,8 @@
 import React from "react";
-import { appsIcons } from "../../Logic/dataLocalStatic";
-import { motion as Motion } from "../../Shared/Libs";
-import { tvShow } from "../../Shared/Images";
+import { appsIcons } from "@/Logic/dataLocalStatic";
+import { motion as Motion } from "@/Shared/Libs";
+import { BounceInUp } from '@/Shared/components'
+import { tvShow } from "@/Shared/Images";
 export const WatchEverywhere = () => {
   return (
     <>
@@ -53,15 +54,9 @@ export const WatchEverywhere = () => {
             </div>
           </div>
         </Motion.div>
-
-        <Motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-        >
+        <BounceInUp duration={0.9}>
           <img src={tvShow} alt="tvShow" />
-        </Motion.div>
+        </BounceInUp>
       </section>
     </>
   );

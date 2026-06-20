@@ -1,12 +1,12 @@
 import React from "react";
-import { motion as Motion } from "../../Shared/Libs";
-import { HoverLayerButton } from "../../components/Ui/CustomBtn/HoverLayerButton";
+import { motion as Motion } from "@/Shared/Libs";
+import { HoverLayerButton } from "@/components/Ui/CustomBtn/HoverLayerButton";
 
 export const MainContent = () => {
   return (
     <div
     viewport={{ once: true }}
-      className="w-full h-screen  bg-[url('/src/assets/images/hero.webp')] bg-cover
+      className="w-full h-screen bg-[url('/src/assets/images/hero.webp')] bg-cover
        bg-center bg-no-repeat relative flex justify-center overflow-hidden items-center"
     >
       <div className="absolute inset-0 bg-gray-950 opacity-40"></div>
@@ -17,7 +17,7 @@ export const MainContent = () => {
        transition={{ duration: 1 , delay:0.1}}
        className="relative z-20 flex flex-wrap justify-center items-center">
         <h1
-          className="text-center w-full 
+        className="text-center w-full 
         font-extrabold text-5xl sm:text-6xl md:text-8xl mb-8 text-transparent bg-clip-text bg-linear-to-r from-[#d9a520] via-[#f1c857] to-[#d9a520]
         "
         >
@@ -30,14 +30,9 @@ export const MainContent = () => {
         </p>
         <div className="w-full text-center mt-8 flex justify-center">
             <HoverLayerButton className="w-40 h-14 me-10" 
-            bg_during_hover={'bg-white'}
-            color_during_hover={'#ffffff'}
-            bg_before_hover={'bg-[#d9a520]'} 
             > Get Start </HoverLayerButton>
             <HoverLayerButton className="w-40 h-14" textSize={"text-xl" }
-             bg_before_hover={'bg-white'}
-             bg_during_hover={'bg-transparent'}
-             color_during_hover={'#d9a520'}
+         
             >More info</HoverLayerButton>
         </div>
       </Motion.div>

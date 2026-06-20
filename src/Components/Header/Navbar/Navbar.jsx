@@ -1,11 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import { motion as Motion, useScroll } from "motion/react";
-import { HoverLayerButton } from "../../Ui/CustomBtn/HoverLayerButton";
-import { DropdownNav } from './DropdownNav'
-import moviesMBLogo from "../../../assets/images/Movies M-B.svg";
-import { Links } from './Links'
-
+import React from "react";
+import { useEffect , useRef , useState } from '@/Shared/Hooks';
+import { Link , motion as Motion , useScroll } from '@/Shared/Libs';
+import { Links , DropdownNav , HoverLayerButton  , MainBtn } from '@/Shared/Components';
+import { moviesMBLogo } from '@/Shared/Images';
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -125,11 +122,7 @@ export const Navbar = () => {
             </span>
           </label>
 
-          <Link to="/Login" className="hidden sm:block">
-               <HoverLayerButton bg_during_hover={'bg-main-color'} 
-                 bg_before_hover={'bg-transparent'}
-               >Sign In</HoverLayerButton>
-          </Link>
+          <HoverLayerButton> sign In </HoverLayerButton>
         </div>
       </div>
     
@@ -139,3 +132,12 @@ export const Navbar = () => {
   
   </>)
 }
+
+/*
+  <Link to="/Login" className="hidden sm:block">
+               <HoverLayerButton bg_during_hover={'bg-main-color'} 
+                 bg_before_hover={'bg-transparent'}
+               >Sign In</HoverLayerButton>
+          </Link>
+
+*/
