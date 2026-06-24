@@ -1,6 +1,6 @@
 import { motion , AnimatePresence , useScroll } from "motion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link , NavLink , useLocation , Outlet } from "react-router-dom";
+import { Link , NavLink , useLocation , Outlet , createBrowserRouter , RouterProvider } from "react-router-dom";
 
 export {
     motion , 
@@ -11,5 +11,7 @@ export {
     NavLink ,
     useScroll ,
     useLocation ,
-    Outlet 
+    Outlet ,
+    createBrowserRouter ,
+    RouterProvider ,
 }

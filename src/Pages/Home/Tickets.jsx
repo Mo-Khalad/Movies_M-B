@@ -1,5 +1,5 @@
 import React from "react";
-import { Dropdown } from "@/Components/Ui/Blocks/Dropdown";
+import { Dropdown , SubmitBtn } from "@/Shared/Components";
 import {
   movieTimeOptions,
   seatsCountOptions,
@@ -10,7 +10,7 @@ export const Tickets = () => {
   return (
     <section className="bg-base-300 w-full my-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
-        <div className="w-full col-span-1 min-h-screen loveImage text-center hidden md:block"></div>
+        <div className="w-full col-span-1 min-h-screen loveImage text-center hidden md:block relative z-20"></div>
 
         <div className="min-h-screen bg-dark flex flex-wrap justify-center items-center">
           <div className="w-full">
@@ -22,7 +22,6 @@ export const Tickets = () => {
               ~ Check out our place ~{" "}
             </h4>
           </div>
-
           <Motion.form
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -34,19 +33,19 @@ export const Tickets = () => {
               type="text"
               required
               placeholder="Name"
-              className="border-0 border-b-2 border-amber-50 text-gray-300 text-[16px] max-w-[475px]"
+              className="border-0 border-b-2 border-amber-50 text-gray-400 text-[15px] max-w-[475px]"
             />
             <input
               type="text"
               required
               placeholder="Phone"
-              className="border-0 border-b-2 border-amber-50 text-gray-300 text-[16px] max-w-[475px]"
+              className="border-0 border-b-2 border-amber-50 text-gray-400 text-[15px] max-w-[475px]"
             />
             <input
               type="text"
               required
               placeholder="Email"
-              className="border-0 border-b-2 border-amber-50 text-gray-300 text-[16px] max-w-[475px]"
+              className="border-0 border-b-2 border-amber-50 text-gray-400 text-[15px] max-w-[475px]"
             />
 
             <Dropdown>{seatsCountOptions}</Dropdown>
@@ -54,8 +53,11 @@ export const Tickets = () => {
 
             <input
               type="date"
-              className="border-0 border-b-2 border-amber-50 text-gray-300 text-[16px] max-w-[475px]"
+              className="border-0 border-b-2 border-amber-50 text-gray-400 text-[15px] max-w-[475px]"
             />
+           <div className='col-span-2'>
+              <SubmitBtn className='bg-main-color w-88'>Apply</SubmitBtn>
+           </div>
           </Motion.form>
         </div>
       </div>

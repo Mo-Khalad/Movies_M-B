@@ -1,6 +1,6 @@
 import React from "react";
 import { motion as Motion } from "@/Shared/Libs";
-import { HoverLayerButton } from "@/components/Ui/CustomBtn/HoverLayerButton";
+import { HoverLayerButton } from "@/Components/Ui/CustomBtn/HoverLayerButton";
 
 export const MainContent = () => {
   return (
@@ -29,10 +29,9 @@ export const MainContent = () => {
           Premium stories. Exclusive access. Pure cinematic excellence.
         </p>
         <div className="w-full text-center mt-8 flex justify-center">
-            <HoverLayerButton className="w-40 h-14 me-10" 
+            <HoverLayerButton className="w-40 h-14 me-10 MainButton" 
             > Get Start </HoverLayerButton>
             <HoverLayerButton className="w-40 h-14" textSize={"text-xl" }
-         
             >More info</HoverLayerButton>
         </div>
       </Motion.div>

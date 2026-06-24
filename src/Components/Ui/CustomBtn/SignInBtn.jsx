@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion as Motion } from "@/Shared/Libs";
 
 export const SignInBtn = ({
         children ,
@@ -12,7 +13,7 @@ export const SignInBtn = ({
           initial="rest"
           whileHover="hover"
           animate="rest"
-          className={`relative h-10 overflow-hidden rounded-lg border border-main-color px-6 py-1 font-bold text-main-color ${className}`}
+          className={`relative overflow-hidden rounded-lg border border-main-color px-6 py-1 font-bold text-main-color ${className}`}
         >
           <Motion.span
             variants={{
@@ -28,11 +29,10 @@ export const SignInBtn = ({
               rest: { color: '#d9a520'},
               hover: { color:'#f4f4f4' },
             }}
-            className={`relative z-10 font-medium ${textSize}`}
+            className={`relative z-10 font-medium`}
           >
             {children}
           </Motion.span>
         </Motion.button>
-      );
-
+  );
 }

@@ -1,16 +1,17 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home } from "./Pages/Home/Home";
-import { DetailsMovie } from "./Pages/DetailsMovie/DetailsMovie";
-import { DetailsTVShow } from "./Pages/DetailsTVShow/DetailsTVShow";
-import { LayOut } from "./Components/LayOut/LayOut";
-import { Favorite } from "./Pages/Favorite/Favorite";
-import { Movies } from "./Pages/Movies/Movies";
-import { TVShows } from "./Pages/TVShows/TVShows";
-import { WatchList } from "./Pages/WatchList/WatchList";
-import { MainError } from "./Pages/Error/MainError/MainError";
-import { Login } from "./Pages/Authentication/Login/Login";
-import { Register } from "./Pages/Authentication/Register/Register";
+import { createBrowserRouter, RouterProvider } from "@/Shared/Libs";
+import {  
+  Home , 
+  DetailsMovie ,
+  DetailsTVShow ,
+  LayOut ,
+  Favorite ,
+  Movies , 
+  TVShows ,
+  WatchList ,
+  MainError , 
+  Login , 
+  Register  } from "@/Shared/Components";
 
 const App = () => {
   const router = createBrowserRouter([

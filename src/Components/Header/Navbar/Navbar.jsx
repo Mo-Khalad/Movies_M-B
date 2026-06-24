@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect , useRef , useState } from '@/Shared/Hooks';
 import { Link , motion as Motion , useScroll } from '@/Shared/Libs';
-import { Links , DropdownNav , HoverLayerButton  , MainBtn } from '@/Shared/Components';
+import { Links , DropdownNav , SignInBtn } from '@/Shared/Components';
 import { moviesMBLogo } from '@/Shared/Images';
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -122,7 +122,7 @@ export const Navbar = () => {
             </span>
           </label>
 
-          <HoverLayerButton> sign In </HoverLayerButton>
+          <SignInBtn> sign In </SignInBtn>
         </div>
       </div>
     

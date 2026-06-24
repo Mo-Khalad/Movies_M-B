@@ -19,9 +19,9 @@ export const Login = () => {
           <div className='relative mb-6'>
             <Input type='text' placeholder='password' className='w-full my-1'/>
             <ErrorField message={'Field is Required'}/>          
-          </div>
-
-          <div className='flex justify-between'>
+          </div> 
+          
+          <div className='size-full flex justify-between mb-3 md:mb-0'>
                <label className='label text-sm text-gray-400 hover:text-gray-200 cursor-pointer transition-all duration-300'> 
                    <input type="checkbox" defaultChecked className="checkbox checkbox-sm rounded-md" />
                    Remember me 
@@ -33,7 +33,7 @@ export const Login = () => {
 
           <div className="divider">OR</div>
           
-          <div className='grid gap-6 w-[50%] m-auto'>
+          <div className='grid gap-6 w-[75%] md:w-[50%] m-auto'>
               <button className="btn bg-[#064ca8] text-white border-[#005fd8] round-sm group">
                 <svg className='group-hover:me-2 duration-200' aria-label="Facebook logo" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M8 12h5V8c0-6 4-7 11-6v5c-4 0-5 0-5 3v2h5l-1 6h-4v12h-6V18H8z"></path></svg>
                 Login with Facebook

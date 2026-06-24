@@ -1,8 +1,8 @@
 import React from "react";
-import { motion as Motion } from "@/Shared/Libs";
+//import { motion as Motion } from "@/Shared/Libs";
 import { subscriptionsData } from "@/Logic/dataLocalStatic";
 import { BounceInUp } from "@/Shared/Components";
-import { SecondaryBtn } from "@/Components/Ui/CustomBtn/SecondaryBtn";
+import { SubmitBtn } from "@/Components/Ui/CustomBtn/SubmitBtn";
 
 export const Subscriptions = () => {
   const isMobile = window.innerWidth < 768;
@@ -27,7 +27,6 @@ export const Subscriptions = () => {
                 ? "w-76 h-64 shadow-second-shadow hover:shadow-main-shadow"
                 : "w-76 h-64 md:w-96 md:h-76 md:shadow-main-shadow"
               } my-2 bg-base-100 shadow-main-shadow flex items-center`}
-              className={`${type === "economy" ? "w-76 h-64 shadow-second-shadow hover:shadow-main-shadow transition-shadow delay-150" : "w-76 h-64 md:w-96 md:h-76 md:shadow-main-shadow"} my-2 bg-base-100 shadow-main-shadow flex items-center`}
               duration = {0.6}
               whileHover={!isMobile ? (type === "economy" ? { 
                   scale: 1.2 ,
@@ -87,7 +86,7 @@ export const Subscriptions = () => {
                 </ul>
 
                 <div className="mt-4">
-                   <SecondaryBtn type={ type }> Subscribe </SecondaryBtn>
+                   <SubmitBtn type={ type }> Subscribe </SubmitBtn>
                 </div>
               </div>
             </BounceInUp>

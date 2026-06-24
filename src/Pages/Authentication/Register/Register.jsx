@@ -12,14 +12,14 @@ export const Register = () => {
         <div className="backdrop-blur-lg flex flex-wrap justify-center items-center z-10 mt-15 px-10 py-5 rounded-md shadow-[0_0_4px_rgba(255,255,255,0.8)] w-[600px] h-8/10 bg-base-100/50">
           <h1 className='text-4xl lg:text-5xl text-main-color py-1 my-5'>welcome back</h1>
           <form className='size-full flex flex-wrap justify-between'>
-            <div className='relative mb-6 w-60'>
+            <div className='relative mb-6 w-full md:w-60'>
               <Input type='Email' placeholder='Email' className='w-4 my-1'/>
               { // <ErrorField message={'Field is Required'}/> 
               }
 
             </div>
   
-            <div className='relative mb-6 w-60'>
+            <div className='relative mb-6 w-full md:w-60'>
               <Input type='text' placeholder='password' className='w-full my-1'/>
             { // <ErrorField message={'Field is Required'}/>
              }          
@@ -31,19 +31,19 @@ export const Register = () => {
              }          
             </div>
 
-            <div className='relative mb-6 w-60'>
+            <div className='relative mb-6 w-full md:w-60'>
               <Input type='text' placeholder='password' className='w-full my-1'/>
             { // <ErrorField message={'Field is Required'}/>
              }          
             </div>
 
-            <div className='relative mb-6 w-60'>
+            <div className='relative mb-6 w-full md:w-60'>
               <Input type='text' placeholder='password' className='w-full my-1'/>
             { // <ErrorField message={'Field is Required'}/>
              }          
             </div>
   
-            <div className='size-full flex justify-between'>
+            <div className='size-full flex justify-between mb-3'>
                  <label className='label text-sm text-gray-400 hover:text-gray-200 cursor-pointer transition-all duration-300'> 
                      <input type="checkbox" defaultChecked className="checkbox checkbox-sm rounded-md" />
                      Remember me 
@@ -56,7 +56,7 @@ export const Register = () => {
           <MainBtn className='bg-main-color text-md w-88 font-black'>Register</MainBtn>
           <div className="divider">OR</div>
   
-          <div className='grid gap-6 w-[50%] m-auto'>
+          <div className='grid gap-6 w-[75%] md:w-[50%] m-auto'>
               <button className="btn bg-[#064ca8] text-white border-[#005fd8] round-sm group">
                 <svg className='group-hover:me-2 duration-200' aria-label="Facebook logo" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M8 12h5V8c0-6 4-7 11-6v5c-4 0-5 0-5 3v2h5l-1 6h-4v12h-6V18H8z"></path></svg>
                 Login with Facebook
